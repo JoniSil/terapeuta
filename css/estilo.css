@@ -13,8 +13,11 @@ body{
     color: #000;
   }
 
-  #sobre h1 {
-    font-family: josefini;
+  #sobre, h1{
+    font-weight: 200;
+    font-family: josefine;
+    text-transform: none;
+
   }
   
   .wrapper{

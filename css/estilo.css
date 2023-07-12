@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Titillium+Web&display=swap');
+
 body{
     margin:0;
     padding:0;
@@ -19,6 +20,31 @@ body{
     text-transform: none;
 
   }
+
+  ul {
+    list-style: none;
+  }
+
+  #contato1  li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+  }
+
+  }
+
+ a:link, a:active, a:visited {
+    color: #af670a;
+    text-decoration: none;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+ }
+
+ a:hover {
+    color: #9370DB;
+ }
   
   .wrapper{
     width: 100%;
@@ -93,7 +119,11 @@ body{
   }
   
   section.module.parallax-3{
-    background-image: url("https://images.unsplash.com/photo-1472162314594-eca3c3d90df1?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+    background-image: url(../imagens/tratamento.jpg);
+  }
+
+  section.module.parallax-4{
+    background-image: url(../imagens/reiki-2.jpg);
   }
   
   section.module.parallax h1{
@@ -147,7 +177,7 @@ body{
 
 
 .topo img {
-    width: 150px;
+    width: 200px;
 }
 
 .paragrafo-topo {
@@ -161,5 +191,54 @@ body{
   font-size: 18px;
   text-decoration: none;
   margin: 0 10px;
-  border-bottom: 2px solid #1d1d1d;
+ 
 }
+
+.btn_social { 
+  width:100%; 
+  float:left; 
+  display:flex; 
+  margin:auto; 
+}
+.btn_social ul  { 
+  width:auto; 
+  margin:auto; 
+  float:left; 
+  display:block; 
+}
+.btn_social ul li  { 
+  position:relative; 
+  background:#555555; 
+  list-style:none; 
+  float:left; 
+  margin:5px; 
+  z-index:1; 
+  overflow:hidden; 
+  border-radius:3px; 
+  font-size:1.5em; 
+  text-align:center; 
+}
+.btn_social ul li a  { 
+  width:50px; 
+  height:50px; 
+  line-height:53px; 
+  display:block; 
+  text-decoration:none; 
+  color:#fff; 
+  transition:.4s;
+}
+.btn_social ul li::before { 
+  transition:0.4s; 
+  position:absolute; 
+  content:''; 
+  width:100%; 
+  height:100%; 
+  top:90%; 
+  left:0; 
+  background:#2fcacf; 
+  z-index:-1; 
+  transform: scale(1); 
+  transition:.4s; 
+}
+.btn_social ul li:hover::before { transition:0.4s; top:0%; }
+.btn_social ul li a:hover       { color:#555555; }
